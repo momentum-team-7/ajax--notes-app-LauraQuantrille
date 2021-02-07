@@ -31,9 +31,9 @@ The URL for your notes API is `http://localhost:3000/notes/`.
 
 ### Using the notes API
 
-To get a list of all notes, make a `GET` request to `http://localhost:3000/notes/`.
+[1]To get a list of all notes, make a `GET` request to `http://localhost:3000/notes/`.
 
-To add a new note, make a `POST` request to `http://localhost:3000/notes/`. You will need to send a body and headers. Your request will look like this:
+[2]To add a new note, make a `POST` request to `http://localhost:3000/notes/`. You will need to send a body and headers. Your request will look like this:
 
 ```js
 fetch('http://localhost:3000/notes/', {
