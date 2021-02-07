@@ -1,0 +1,31 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: #234f94;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('Wide-Ruled-Paper-US-Letter.png');
+    background-size: cover;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.note-field, .note-title, .note-save {
+    padding: 10px;
+}
+#note-list {
+    color: #234f94;
+    padding: 20px;
+    list-style-type: none;
+    
+    
+}
+#note-form {
+    margin-left: 200px;
+    margin-top: 100px;
+}

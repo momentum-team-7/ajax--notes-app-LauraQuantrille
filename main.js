@@ -1,4 +1,5 @@
 
+// globals fetch, moment
 const url = 'http://localhost:3000/notes'
 const form = document.querySelector('#note-form')
 const noteList = document.querySelector('#note-list')
@@ -25,9 +26,7 @@ noteList.addEventListener('click', function (event) {
 
 
 })
-// noteList.addEventListener('click', function (event) {
-//     if (event.target.classList.contains())
-// })
+
 // ~*CRUD Functions*~ //
 function listNotes() {
     fetch (url)
@@ -47,8 +46,7 @@ function createNote (noteText, noteTitle) {
         body: JSON.stringify({
             title: noteTitle,
             body: noteText,
-            // created_at: moment().format()
-                // body: JSON.stringify({"title": "Hi", "body":
+            created_at: moment().format()
         })
     })
         .then(res => res.json())
@@ -74,7 +72,7 @@ function updateNote (element) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         body: noteText.value,
-        // updated_at: moment().format()
+        updated_at: moment().format()
       })
     })
       .then(function (res) {
@@ -121,12 +119,7 @@ function editNote (element) {
       })
   }
 
-// function editNote (element) {
-//     showEditInput(element.parentElement)
-// }
-// function showEditInput (noteItem) {
-//     noteItem.innerHTML =
-// }
+
 listNotes()
 
 
